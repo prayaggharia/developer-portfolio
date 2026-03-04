@@ -6,7 +6,7 @@ const projects = [
         name: 'Music Portfolio',
         date: '03 Mar 2026',
         description: 'A curated showcase of music projects and compositions.',
-        tags: [],
+        wip: true,
     },
 ];
 
@@ -26,6 +26,11 @@ export default function ProjectsPage() {
                         </div>
                         <h2 className="project-card__name">{project.name}</h2>
                         <p className="project-card__desc">{project.description}</p>
+                        {project.wip && (
+                            <span className="project-card__wip">
+                                currently working on this
+                            </span>
+                        )}
                     </div>
                 ))}
             </div>

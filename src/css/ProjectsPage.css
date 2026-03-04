@@ -61,6 +61,18 @@
     letter-spacing: 0.05em;
 }
 
+.project-card__wip {
+    display: inline-block;
+    align-self: center;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.68rem;
+    color: var(--color-neon);
+    background: var(--color-neon-subtle);
+    border: 1px solid var(--color-neon-border);
+    border-radius: 9999px;
+    padding: 0.15rem 0.6rem;
+}
+
 .project-card__name {
     font-size: 1.15rem;
     font-weight: 700;
