@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import BlogsPage from './pages/BlogsPage';
+import PromptingGuidePage from './pages/PromptingGuidePage';
 
 export default function App() {
     const { theme: themeMode, toggleTheme } = useTheme();
@@ -17,6 +18,7 @@ export default function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/projects" element={<ProjectsPage />} />
                 <Route path="/blogs" element={<BlogsPage />} />
+                <Route path="/projects/prompting-guide" element={<PromptingGuidePage />} />
             </Routes>
             <Footer />
         </div>
