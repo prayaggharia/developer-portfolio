@@ -1,0 +1,34 @@
+.projects-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 3rem;
+}
+
+.projects-page__header {
+    text-align: center;
+}
+
+.projects-page__label {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    color: var(--color-neon);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.projects-page__title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.projects-page__subtitle {
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    color: var(--color-emerald);
+}

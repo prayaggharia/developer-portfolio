@@ -1,0 +1,32 @@
+.stack-card {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.stack-card__surface {
+    position: relative;
+    background: var(--gradient-card);
+    border: 1px solid var(--color-neon-border);
+    border-radius: 24px;
+    overflow: hidden;
+    padding: 6rem 2rem;
+    box-shadow: var(--shadow-card);
+    will-change: opacity;
+}
+
+@media (max-width: 768px) {
+    .stack-card__surface {
+        padding: 3rem 1rem;
+        border-radius: 16px;
+    }
+}
+
+.stack-card__neon-edge {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-neon), transparent);
+    opacity: 0.3;
+}

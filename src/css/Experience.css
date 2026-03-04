@@ -1,0 +1,217 @@
+.xp {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.xp__header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.xp__label {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    color: var(--color-neon);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.xp__title {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+/* Timeline center line */
+.xp__timeline {
+    position: relative;
+}
+
+.xp__timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, var(--color-neon), var(--color-emerald), transparent);
+    opacity: 0.25;
+}
+
+/* Item */
+.xp__item {
+    position: relative;
+    width: 50%;
+    padding-bottom: 2.5rem;
+}
+
+.xp__item--left {
+    padding-right: 3rem;
+    text-align: right;
+}
+
+.xp__item--right {
+    margin-left: 50%;
+    padding-left: 3rem;
+}
+
+/* Dot  */
+.xp__dot {
+    position: absolute;
+    top: 1.5rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--color-void);
+    border: 2px solid var(--color-neon);
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
+    z-index: 1;
+}
+
+.xp__item--left .xp__dot {
+    right: -9px;
+}
+
+.xp__item--right .xp__dot {
+    left: -9px;
+}
+
+.xp__dot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-neon);
+}
+
+/* Card */
+.xp__card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-neon-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: all 300ms ease;
+}
+
+.xp__card:hover {
+    border-color: rgba(57, 255, 20, 0.25);
+    box-shadow: var(--shadow-card);
+}
+
+.xp__card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.xp__period {
+    font-size: 0.78rem;
+    font-family: 'Fira Code', monospace;
+    color: var(--color-neon);
+}
+
+.xp__type {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: var(--color-neon-subtle);
+    color: var(--color-neon-muted);
+    font-weight: 500;
+}
+
+.xp__role {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 2px;
+}
+
+.xp__company {
+    font-size: 0.88rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.xp__desc {
+    font-size: 0.86rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.xp__highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 1rem;
+}
+
+.xp__highlight {
+    font-size: 0.82rem;
+    color: var(--color-text-secondary);
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.xp__highlight::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--color-neon);
+}
+
+.xp__tech-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.xp__tag {
+    padding: 0.2rem 0.55rem;
+    background: var(--color-neon-subtle);
+    border: 1px solid var(--color-neon-border);
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-family: 'Fira Code', monospace;
+    color: var(--color-neon-muted);
+}
+
+/* Mobile: stack everything left */
+@media (max-width: 768px) {
+    .xp__timeline::before {
+        left: 20px;
+        transform: none;
+    }
+
+    .xp__item,
+    .xp__item--left,
+    .xp__item--right {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 56px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .xp__item--left .xp__dot,
+    .xp__item--right .xp__dot {
+        left: 11px;
+        right: auto;
+    }
+}
