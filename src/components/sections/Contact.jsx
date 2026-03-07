@@ -42,7 +42,10 @@ export default function Contact() {
               </div>
             ))}
           </div>
+<<<<<<< HEAD
           <div className="contact__avail"><span className="contact__avail-dot" />ready to deploy</div>
+=======
+>>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
         </motion.div>
 
         <motion.form className="contact__form" onSubmit={handleSubmit} initial={{ opacity: 0, x: 30 }} animate={isVisible ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.5, delay: 0.3 }}>

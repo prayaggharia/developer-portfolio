@@ -23,6 +23,7 @@
     text-shadow: var(--shadow-neon-sm);
 }
 
+<<<<<<< HEAD
 .footer__logo::after {
     content: '_';
     animation: blink 1s step-end infinite;
@@ -33,6 +34,8 @@
         opacity: 0;
     }
 }
+=======
+>>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
 
 .footer__tagline {
     font-size: 0.8rem;

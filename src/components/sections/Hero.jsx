@@ -2,6 +2,10 @@ import { useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-scroll';
+<<<<<<< HEAD
+=======
+import { Link as RouterLink } from 'react-router-dom';
+>>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
 import { HiArrowDown, HiDocumentArrowDown } from 'react-icons/hi2';
 import '../../css/Hero.css';
 
@@ -33,10 +37,13 @@ export default function Hero() {
             <div className="hero__cursor-glow" ref={glowRef} />
 
             <div className="hero__content">
+<<<<<<< HEAD
                 <motion.div className="hero__badge" variants={fadeUp(0)} initial="hidden" animate="visible">
                     <span className="hero__status-dot" /> system.status: available
                 </motion.div>
 
+=======
+>>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
                 <motion.h1 className="hero__title" variants={fadeUp(0.15)} initial="hidden" animate="visible">
                     Hi, I'm <span className="hero__name-glow">Prayag</span>
                 </motion.h1>
@@ -53,6 +60,10 @@ export default function Hero() {
                         wrapper="span"
                         speed={40}
                         repeat={Infinity}
+<<<<<<< HEAD
+=======
+                        cursor={false}
+>>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
                     />
                 </motion.div>
 
@@ -62,9 +73,15 @@ export default function Hero() {
                 </motion.p>
 
                 <motion.div className="hero__cta-row" variants={fadeUp(0.6)} initial="hidden" animate="visible">
+<<<<<<< HEAD
                     <Link to="skills" smooth duration={500} offset={-72}>
                         <button className="hero__btn-primary">Projects</button>
                     </Link>
+=======
+                    <RouterLink to="/projects">
+                        <button className="hero__btn-primary">Projects</button>
+                    </RouterLink>
+>>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
                     <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hero__btn-secondary">
                         <HiDocumentArrowDown size={16} /> ./resume.pdf
                     </a>

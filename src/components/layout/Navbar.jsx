@@ -64,12 +64,28 @@ export default function Navbar({ theme, toggleTheme }) {
                             home
                         </span>
                     )}
+<<<<<<< HEAD
                     <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="navbar__resume-btn">
                         ./resume
                     </a>
                 </div>
 
                 <div className="navbar__actions">
+=======
+                </div>
+
+                <div className="navbar__actions">
+                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="navbar__projects-btn">
+                        ./resume
+                    </a>
+                    <button
+                        className="navbar__blogs-btn"
+                        onClick={() => navigate('/blogs')}
+                        title="Blogs"
+                    >
+                        ./blogs
+                    </button>
+>>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
                     <button
                         className="navbar__projects-btn"
                         onClick={() => navigate('/projects')}
