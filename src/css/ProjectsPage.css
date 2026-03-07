@@ -1,23 +1,13 @@
 .projects-page {
     min-height: 100vh;
-<<<<<<< HEAD
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6rem 2rem 3rem;
-=======
     padding: 7rem 2rem 4rem;
     max-width: 1200px;
     margin: 0 auto;
->>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
 }
 
 .projects-page__header {
     text-align: center;
-<<<<<<< HEAD
-=======
     margin-bottom: 3rem;
->>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
 }
 
 .projects-page__label {
@@ -34,16 +24,6 @@
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 700;
     color: var(--color-text-primary);
-<<<<<<< HEAD
-    margin-bottom: 0.5rem;
-}
-
-.projects-page__subtitle {
-    font-family: 'Fira Code', monospace;
-    font-size: 1rem;
-    color: var(--color-emerald);
-}
-=======
 }
 
 .projects-page__grid {
@@ -277,4 +257,3 @@
 .pin-modal__cancel:hover {
     color: var(--color-text-secondary);
 }
->>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204

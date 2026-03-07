@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import '../css/ProjectsPage.css';
-
-export default function ProjectsPage() {
-=======
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/ProjectsPage.css';
@@ -36,7 +31,7 @@ const projects = [
 
 export default function ProjectsPage() {
     const navigate = useNavigate();
-    const [pinModal, setPinModal] = useState(null); // project being unlocked
+    const [pinModal, setPinModal] = useState(null);
     const [pinValue, setPinValue] = useState('');
     const [pinError, setPinError] = useState(false);
     const [shake, setShake] = useState(false);
@@ -75,16 +70,11 @@ export default function ProjectsPage() {
         }
     };
 
->>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
     return (
         <div className="projects-page">
             <div className="projects-page__header">
                 <span className="projects-page__label">// projects</span>
                 <h1 className="projects-page__title">Interactive Showcase</h1>
-<<<<<<< HEAD
-                <p className="projects-page__subtitle">{`> coming soon_`}</p>
-            </div>
-=======
             </div>
 
             <div className="projects-page__grid">
@@ -163,7 +153,6 @@ export default function ProjectsPage() {
                     </div>
                 </div>
             )}
->>>>>>> 388bcf2ac9aefbc3727189e205741250c1800204
         </div>
     );
 }
